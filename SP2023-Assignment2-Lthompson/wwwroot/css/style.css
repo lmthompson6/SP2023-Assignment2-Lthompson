@@ -1,1 +1,10 @@
- 
+ body{
+     background-image: url("spookybackground.jpg");
+ }
+
+ div.searchResults{
+     visibility: hidden;
+ }
+div.time {
+    visibility: hidden;
+}

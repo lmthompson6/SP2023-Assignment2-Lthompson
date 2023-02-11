@@ -13,14 +13,25 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" 
             integrity="sha384-4D3G3GikQs6hLlLZGdz5wLFzuqE9v4yVGAcOH86y23JqBDPzj9viv0EqyfIa6YUL"
             crossorigin="anonymous"></script>
-
+    <title>Spooky Search Engine</title>
 
 </head>
 
 <body>
 
   <script type="text/javascript" src="./js/script.js"></script>
-    <h1>Hello this is a test</h1>
+    <h1>Spooky Search Engine</h1>
+    <form>
+        <input type="text" id="query" placeholder="Input Search Here" /><br />
+        <button type="button" value="Search" onclick="searcher()">Search</button>
+        <button type="button" >Show Current Time</button>
+    </form>
+    <div id="searchResults" class="searchResults">
+
+    </div>
+    <div id="time" class="time">
+
+    </div>
 
 </body>
 
