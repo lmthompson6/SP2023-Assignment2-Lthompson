@@ -10,29 +10,36 @@
             crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/ui-darkness/jquery-ui.css" 
           integrity="sha384-wlGrpvMYH2p8rHQJ8Q5A59TCpbRuhEkTKPlG19lfX3k2vL4NGTBUswpzdkg4eKrq" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" 
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"
             integrity="sha384-4D3G3GikQs6hLlLZGdz5wLFzuqE9v4yVGAcOH86y23JqBDPzj9viv0EqyfIa6YUL"
             crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment-with-locales.min.js" 
+            integrity="sha384-njdhObnZl0+D6iv/pV3gfStZxeAHygRBLvZTIQvry5R4kubY+dt/yqABU+UcEWez" crossorigin="anonymous"></script>
     <title>Spooky Search Engine</title>
 
 </head>
 
-<body>
+<body id="htmlBody">
 
-  <script type="text/javascript" src="./js/script.js"></script>
-    <h1>Spooky Search Engine</h1>
-    <form>
-        <input type="text" id="query" placeholder="Input Search Here" /><br />
-        <button type="button" value="Search" onclick="searcher()">Search</button>
-        <button type="button" >Show Current Time</button>
-    </form>
+    <div id="wrapper" class="wrapper">
+        <h1 onclick="backgroundchanger()">Spooky Search Engine</h1>
+        <div id="inner" style="width:60%; margin:0 auto;">
+            <input type="text" id="query" class="ui-widget ui-corner-all ui-input" placeholder="Input Search Here" /><br />
+            <button type="button" class="ui-button ui-widget ui-corner-all" style="margin:5% 5%" value="Search" onclick="searcher()">Search</button><br />
+            <button type="button" class="ui-button ui-widget ui-corner-all" onclick="gettime()">Show Current Time</button>
+            <button type="button" class="ui-button ui-widget ui-corner-all" id="imFeelingLucky" onclick="imFeelingLucky()">I'm Feeling Lucky</button>
+        </div>
+
+    </div>
+
+
     <div id="searchResults" class="searchResults">
 
     </div>
     <div id="time" class="time">
 
     </div>
-
+    <script type="text/javascript" src="./js/script.js"></script>
 </body>
 
 </html>

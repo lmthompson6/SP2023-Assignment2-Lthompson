@@ -1,10 +1,27 @@
  body{
-     background-image: url("spookybackground.jpg");
+     background-image: url("/Images/spookybackground.jpg");
+     background-size:cover;
+     font-family:Arial;
+     text-align: center;
+ }
+
+ h1{
+     text-align:center;
+
+
  }
 
  div.searchResults{
-     visibility: hidden;
+     display: none;
+
  }
 div.time {
-    visibility: hidden;
+    display: none;
+    text-align: center
+}
+
+.wrapper {
+    margin: 10% 25%;
+    background-color: rgb(255, 255, 255, 0.5);
+    padding-block: 1%
 }
